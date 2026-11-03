@@ -13,6 +13,7 @@ I work on data science and machine learning projects: collecting and cleaning me
 | [**Engine Failure Prediction**](https://github.com/Sumant-crty/engine-failure-prediction) | Predicts jet engine failure from sensor data (NASA C-MAPSS): classification, survival analysis and remaining useful life (about 15 cycles error, 69–75% below a constant baseline), served by a tested FastAPI service with drift and performance monitoring |
 | [**Supply Chain ETA**](https://github.com/Sumant-crty/supply-chain-eta) | Predicts delivery times for 96,000 real e-commerce orders with CatBoost and point-in-time history features (3.6 days error vs 4.9 for the best baseline), then turns them into delivery promises 3.8 days shorter at the same late rate, or with 31% fewer late deliveries |
 | [**Customer Churn**](https://github.com/Sumant-crty/customer-churn) | Predicts which of a retailer's customers will stop buying, explains why with SHAP, and designs a retention campaign: targeting by risk × value earns £3,353 where contacting everyone loses £20,328, with an experiment plan to measure the real effect |
+| [**Spare Parts Inventory**](https://github.com/Sumant-crty/spare-parts-inventory) | Forecasts intermittent demand for 2,509 car spare parts (Croston, SBA, TSB and a global XGBoost model), sets reorder levels and safety stock, and simulates a year of inventory: 21.5% lower cost than a rule of thumb with a higher fill rate, and a demonstration that the most accurate forecast is not the best for stocking |
 
 #### Other projects
 
@@ -26,7 +27,7 @@ I work on data science and machine learning projects: collecting and cleaning me
 
 #### Tools
 
-- **Data and ML:** Python · pandas · NumPy · scikit-learn · CatBoost · XGBoost · SHAP · survival analysis (lifelines, scikit-survival) · SQL · Polars
+- **Data and ML:** Python · pandas · NumPy · scikit-learn · CatBoost · XGBoost · SHAP · survival analysis (lifelines, scikit-survival) · time-series and intermittent-demand forecasting · inventory optimisation · SQL · Polars
 - **Visualization:** Matplotlib · Seaborn · Plotly · Dash · Streamlit · Folium · IBM Cognos
 - **Engineering:** FastAPI · Flask · Node.js · React · MongoDB · Docker · pytest · GitHub Actions · Git
 
