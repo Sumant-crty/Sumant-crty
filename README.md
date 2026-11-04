@@ -14,6 +14,7 @@ I work on data science and machine learning projects: collecting and cleaning me
 | [**Supply Chain ETA**](https://github.com/Sumant-crty/supply-chain-eta) | Predicts delivery times for 96,000 real e-commerce orders with CatBoost and point-in-time history features (3.6 days error vs 4.9 for the best baseline), then turns them into delivery promises 3.8 days shorter at the same late rate, or with 31% fewer late deliveries |
 | [**Customer Churn**](https://github.com/Sumant-crty/customer-churn) | Predicts which of a retailer's customers will stop buying, explains why with SHAP, and designs a retention campaign: targeting by risk × value earns £3,353 where contacting everyone loses £20,328, with an experiment plan to measure the real effect |
 | [**Spare Parts Inventory**](https://github.com/Sumant-crty/spare-parts-inventory) | Forecasts intermittent demand for 2,509 car spare parts (Croston, SBA, TSB and a global XGBoost model), sets reorder levels and safety stock, and simulates a year of inventory: 21.5% lower cost than a rule of thumb with a higher fill rate, and a demonstration that the most accurate forecast is not the best for stocking |
+| [**Enterprise AI Data Assistant**](https://github.com/Sumant-crty/enterprise-ai-assistant) | Answers business questions over 99,000 e-commerce orders with RAG and text-to-SQL on a local LLM or Claude, behind a SQL guard, role-based access and an audit log. A 59-question evaluation shows retrieval raises SQL accuracy from 44% to 68% and cuts invented numbers from 21% to 4% of answers, with no personal data leaked |
 
 #### Other projects
 
@@ -29,6 +30,7 @@ I work on data science and machine learning projects: collecting and cleaning me
 
 - **Data and ML:** Python · pandas · NumPy · scikit-learn · CatBoost · XGBoost · SHAP · survival analysis (lifelines, scikit-survival) · time-series and intermittent-demand forecasting · inventory optimisation · SQL · Polars
 - **Visualization:** Matplotlib · Seaborn · Plotly · Dash · Streamlit · Folium · IBM Cognos
+- **GenAI:** RAG (BM25 + embeddings) · text-to-SQL · LLM evaluation · Claude API · Ollama · DuckDB · sqlglot
 - **Engineering:** FastAPI · Flask · Node.js · React · MongoDB · Docker · pytest · GitHub Actions · Git
 
 #### Certifications
