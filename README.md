@@ -29,7 +29,7 @@ I work on data science and machine learning projects: collecting and cleaning me
 
 #### Tools
 
-- **Data and ML:** Python · pandas · NumPy · scikit-learn · CatBoost · XGBoost · SHAP · survival analysis (lifelines, scikit-survival) · time-series and intermittent-demand forecasting · inventory optimisation · multi-echelon inventory · OR-Tools · SQL · Polars
+- **Data and ML:** Python · pandas · NumPy · scikit-learn · LightGBM · XGBoost · CatBoost · SHAP · survival analysis (lifelines, scikit-survival) · time-series and intermittent-demand forecasting · inventory optimisation · multi-echelon inventory · OR-Tools · SQL · Polars
 - **Visualization:** Matplotlib · Seaborn · Plotly · Dash · Streamlit · Folium · IBM Cognos
 - **GenAI:** RAG (BM25 + embeddings) · text-to-SQL · LLM evaluation · Claude API · Ollama · DuckDB · sqlglot
 - **Engineering:** PostgreSQL · MLflow · FastAPI · Flask · Node.js · React · MongoDB · Docker · pytest · GitHub Actions · Git
