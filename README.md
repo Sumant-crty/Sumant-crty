@@ -12,6 +12,7 @@ Each project states its business problem, the baseline it beats, and whether its
 
 | Project | Problem → result (against baseline) | Evidence |
 |---|---|---|
+| [**Transportation Network Optimisation**](https://github.com/Sumant-crty/transport-network-optimization) | Routes, vans and station areas for 9,164 real Amazon delivery routes. OR-Tools sequencing cuts **2.0% of route time** against drivers' actual routes while staying as easy to follow; re-planned fleet **4.4% cheaper per day** than vans dispatched; station reassignment cuts stem driving 6%; LightGBM travel-time model | **Modelled estimate:** real stops and travel times, assumed van and driver costs; later test period |
 | [**Multi-Echelon Inventory**](https://github.com/Sumant-crty/multi-echelon-inventory) | Where to hold safety stock (distribution centre or store) for 17,719 Walmart store-items. LightGBM forecasts 10% more accurate than the best baseline; OR-Tools places stock and sets service levels; **25% less inventory** than a rule of thumb at the same 97% fill rate | **Simulation estimate:** real demand, assumed lead times and costs; held-out test year |
 | [**Enterprise AI Data Assistant**](https://github.com/Sumant-crty/enterprise-ai-assistant) | Plain-English questions over 99,000 orders with RAG and text-to-SQL (local LLM or Claude), behind a SQL guard and role-based access. Retrieval raises SQL accuracy **from 44% to 68%** and cuts invented numbers from 21% to 4% of answers; no personal data leaked | **Evaluation** on 59 test questions; no business impact claimed |
 | [**Supply Chain ETA**](https://github.com/Sumant-crty/supply-chain-eta) | Delivery-time prediction for 96,000 real orders: **3.6 days error** against 4.9 for the best baseline, turned into delivery promises 3.8 days shorter at the same late rate | **Backtest** on later real orders; money savings use assumed costs |
@@ -31,7 +32,7 @@ Each project states its business problem, the baseline it beats, and whether its
 
 #### Tools
 
-- **Data and ML:** Python · pandas · NumPy · scikit-learn · LightGBM · XGBoost · CatBoost · SHAP · survival analysis (lifelines, scikit-survival) · time-series and intermittent-demand forecasting · inventory optimisation · multi-echelon inventory · OR-Tools · SQL · Polars
+- **Data and ML:** Python · pandas · NumPy · scikit-learn · LightGBM · XGBoost · CatBoost · SHAP · survival analysis (lifelines, scikit-survival) · time-series and intermittent-demand forecasting · inventory optimisation · multi-echelon inventory · vehicle routing · facility location (MIP) · OR-Tools · SQL · Polars
 - **Visualization:** Matplotlib · Seaborn · Plotly · Dash · Streamlit · Folium · IBM Cognos
 - **GenAI:** RAG (BM25 + embeddings) · text-to-SQL · LLM evaluation · Claude API · Ollama · DuckDB · sqlglot
 - **Engineering:** PostgreSQL · MLflow · FastAPI · Flask · Node.js · React · MongoDB · Docker · pytest · GitHub Actions · Git
