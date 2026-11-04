@@ -8,14 +8,16 @@ I work on data science and machine learning projects: collecting and cleaning me
 
 #### Featured projects
 
-| Project | What it shows |
-|---|---|
-| [**Engine Failure Prediction**](https://github.com/Sumant-crty/engine-failure-prediction) | Predicts jet engine failure from sensor data (NASA C-MAPSS): classification, survival analysis and remaining useful life (about 15 cycles error, 69–75% below a constant baseline), served by a tested FastAPI service with drift and performance monitoring |
-| [**Supply Chain ETA**](https://github.com/Sumant-crty/supply-chain-eta) | Predicts delivery times for 96,000 real e-commerce orders with CatBoost and point-in-time history features (3.6 days error vs 4.9 for the best baseline), then turns them into delivery promises 3.8 days shorter at the same late rate, or with 31% fewer late deliveries |
-| [**Customer Churn**](https://github.com/Sumant-crty/customer-churn) | Predicts which of a retailer's customers will stop buying, explains why with SHAP, and designs a retention campaign: targeting by risk × value earns £3,353 where contacting everyone loses £20,328, with an experiment plan to measure the real effect |
-| [**Spare Parts Inventory**](https://github.com/Sumant-crty/spare-parts-inventory) | Forecasts intermittent demand for 2,509 car spare parts (Croston, SBA, TSB and a global XGBoost model), sets reorder levels and safety stock, and simulates a year of inventory: 21.5% lower cost than a rule of thumb with a higher fill rate, and a demonstration that the most accurate forecast is not the best for stocking |
-| [**Multi-Echelon Inventory**](https://github.com/Sumant-crty/multi-echelon-inventory) | Decides where Walmart's safety stock should sit, at the distribution centre or on store shelves, for 17,719 store-items: LightGBM forecasts (10% more accurate than the best baseline), placement and service levels optimised with OR-Tools, and a test-year simulation estimating 25% less inventory than a rule of thumb at the same 97% service, with PostgreSQL, MLflow, FastAPI, Streamlit and monitoring |
-| [**Enterprise AI Data Assistant**](https://github.com/Sumant-crty/enterprise-ai-assistant) | Answers business questions over 99,000 e-commerce orders with RAG and text-to-SQL on a local LLM or Claude, behind a SQL guard, role-based access and an audit log. A 59-question evaluation shows retrieval raises SQL accuracy from 44% to 68% and cuts invented numbers from 21% to 4% of answers, with no personal data leaked |
+Each project states its business problem, the baseline it beats, and whether its impact is measured, backtested or simulated.
+
+| Project | Problem → result (against baseline) | Evidence |
+|---|---|---|
+| [**Multi-Echelon Inventory**](https://github.com/Sumant-crty/multi-echelon-inventory) | Where to hold safety stock (distribution centre or store) for 17,719 Walmart store-items. LightGBM forecasts 10% more accurate than the best baseline; OR-Tools places stock and sets service levels; **25% less inventory** than a rule of thumb at the same 97% fill rate | **Simulation estimate:** real demand, assumed lead times and costs; held-out test year |
+| [**Enterprise AI Data Assistant**](https://github.com/Sumant-crty/enterprise-ai-assistant) | Plain-English questions over 99,000 orders with RAG and text-to-SQL (local LLM or Claude), behind a SQL guard and role-based access. Retrieval raises SQL accuracy **from 44% to 68%** and cuts invented numbers from 21% to 4% of answers; no personal data leaked | **Evaluation** on 59 test questions; no business impact claimed |
+| [**Supply Chain ETA**](https://github.com/Sumant-crty/supply-chain-eta) | Delivery-time prediction for 96,000 real orders: **3.6 days error** against 4.9 for the best baseline, turned into delivery promises 3.8 days shorter at the same late rate | **Backtest** on later real orders; money savings use assumed costs |
+| [**Spare Parts Inventory**](https://github.com/Sumant-crty/spare-parts-inventory) | Stocking 2,509 intermittent-demand car parts: a global XGBoost policy costs **21.5% less** than a rule of thumb with a higher fill rate | **Simulation estimate:** real demand, assumed costs; held-out test year |
+| [**Customer Churn**](https://github.com/Sumant-crty/customer-churn) | Which customers a retention campaign should target: churn risk × value earns **+£3,353** where contacting everyone loses £20,328; SHAP explains the drivers | **Backtest** on real churn outcomes; campaign economics assumed |
+| [**Engine Failure Prediction**](https://github.com/Sumant-crty/engine-failure-prediction) | Remaining useful life of jet engines (NASA C-MAPSS): **15–16 cycles error**, 69–75% below a constant baseline, with survival analysis, a FastAPI service and drift monitoring | **Held-out test set** of simulated engines; no money estimate |
 
 #### Other projects
 
